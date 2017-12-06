@@ -1,7 +1,5 @@
 package org.usfirst.frc.team2526.robot.commands.test;
 
-import org.usfirst.frc.team2526.robot.commands.groups.GearDropAndHoldAuto;
-
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 /**
@@ -13,7 +11,6 @@ public class AutoCommandGroup extends CommandGroup {
 	public AutoCommandGroup() {
     	setInterruptible(true);
     	addSequential(new TimeDrive(3, .25,-0.25));
-    	addSequential(new GearDropAndHoldAuto(1.2));
     	addSequential(new TimeDrive(3, -0.25, 0.25));
         // Add Commands here:
         // e.g. addSequential(new Command1());
